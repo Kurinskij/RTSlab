@@ -94,22 +94,39 @@ public class GenAlgNetwork {
                             break;
                     }
                     // mutation
-                    if (random.nextInt(100) <= MUTATION_CHANCE + mutation_growth)
+                    if (random.nextInt(100) <= MUTATION_CHANCE + mutation_growth){
                         population.get(i).X1 = random.nextInt(Y / 2);
-                    if (random.nextInt(100) <= MUTATION_CHANCE + mutation_growth)
+MainActivity.Number++;
+}
+                    if (random.nextInt(100) <= MUTATION_CHANCE + mutation_growth){
                         population.get(i).X2 = random.nextInt(Y / 2);
-                    if (random.nextInt(100) <= MUTATION_CHANCE + mutation_growth)
+MainActivity.Number++;
+}
+                    if (random.nextInt(100) <= MUTATION_CHANCE + mutation_growth){
                         population.get(i).X3 = random.nextInt(Y / 2);
-                    if (random.nextInt(100) <= MUTATION_CHANCE + mutation_growth)
+MainActivity.Number++;
+}
+                    if (random.nextInt(100) <= MUTATION_CHANCE + mutation_growth){
                         population.get(i).X4 = random.nextInt(Y / 2);
-                    if (random.nextInt(100) <= MUTATION_CHANCE + mutation_growth)
+MainActivity.Number++;
+}
+                    if (random.nextInt(100) <= MUTATION_CHANCE + mutation_growth){
                         population.get(i+1).X1 = random.nextInt(Y / 2);
-                    if (random.nextInt(100) <= MUTATION_CHANCE + mutation_growth)
+MainActivity.Number++;
+}
+                    if (random.nextInt(100) <= MUTATION_CHANCE + mutation_growth){
                         population.get(i+1).X2 = random.nextInt(Y / 2);
-                    if (random.nextInt(100) <= MUTATION_CHANCE + mutation_growth)
+MainActivity.Number++;
+}
+                    if (random.nextInt(100) <= MUTATION_CHANCE + mutation_growth){
                         population.get(i+1).X3 = random.nextInt(Y / 2);
-                    if (random.nextInt(100) <= MUTATION_CHANCE + mutation_growth)
+MainActivity.Number++;
+}
+                    if (random.nextInt(100) <= MUTATION_CHANCE + mutation_growth){
                         population.get(i+1).X4 = random.nextInt(Y / 2);
+MainActivity.Number++;
+}
+
                 }
             }
         }

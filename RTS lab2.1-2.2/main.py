@@ -1,6 +1,7 @@
 import math
 from matplotlib import pyplot as plt
 from lab1_signal import generate_signal, N, n, OMEGA_MAX
+from time import perf_counter
 
 def iexp(n):
     return complex(math.cos(n), math.sin(n))
@@ -27,7 +28,9 @@ def fft(wave):
 if __name__ == "__main__":
     t = list(range(N))
     x = generate_signal(t)
+    t = perf_counter()
     dfreq = dft(x)
+    print("Time DFT: "+str(perf_counter()-t))
     ffreq = fft(x)
     fig = plt.figure(figsize=[12, 6])
     plots = fig.subplots(3,1, sharex=True)

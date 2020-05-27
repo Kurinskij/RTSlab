@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    static int Number;
     private GenAlgNetwork netw;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void train(View view) {
+        
         EditText editText_A = findViewById(R.id.eT_A);
         EditText editText_B = findViewById(R.id.eT_B);
         EditText editText_C = findViewById(R.id.eT_C);
@@ -65,9 +67,9 @@ public class MainActivity extends AppCompatActivity {
             new AlertDialog.Builder(MainActivity.this)
                     .setTitle("Finished successfully")
                     .setMessage(String.format(
-                            "Optimal mutation_rate: %s\nLowest number of iterations: %s",
+                            "Optimal mutation_rate: %s\nLowest number of iterations: %s;\n Count of mutations: %s",
                             optimal_mut_rate+10,
-                            lowest_iter))
+                            lowest_iter,Number))
                     .setCancelable(true)
                     .setPositiveButton("ok", new DialogInterface.OnClickListener() {
                         @Override
